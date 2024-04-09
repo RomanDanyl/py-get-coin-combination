@@ -17,7 +17,7 @@ class TestGetHumanAgeShouldReturnExpectedResult:
     )
     def test_get_coin_combination(
             self,
-            cents,
-            expected_result
+            cents: int,
+            expected_result: list
     ) -> None:
         assert get_coin_combination(cents) == expected_result
